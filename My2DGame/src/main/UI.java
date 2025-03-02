@@ -69,6 +69,7 @@ public class UI
 
     public void drawGameOverScreen()
     {
+        gp.setBackground(Color.black);
         int playerImgWidth = gp.tileSize * 2;
         int playerImgHeight = gp.tileSize * 2;
         int imgX = (gp.screenWidth - playerImgWidth) / 2;
@@ -201,7 +202,7 @@ public class UI
 
         // Draw the options
         String[] options = {
-                "Press Pause Trigger to Resume",
+                "Resume Game",
                 "Return to Title Screen"
         };
 

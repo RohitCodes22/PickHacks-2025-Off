@@ -50,7 +50,7 @@ public class GamePanel extends JPanel implements Runnable
     public GamePanel()
     {
         this.setPreferredSize(new Dimension(screenWidth, screenHeight));
-        this.setBackground(Color.black);
+        this.setBackground(Color.blue);
         this.setDoubleBuffered(true);
         this.addKeyListener(keyH);
         this.setFocusable(true);
@@ -97,7 +97,8 @@ public class GamePanel extends JPanel implements Runnable
         }
     }
 
-    public void resetGame() {
+    public void resetGame()
+    {
         player.resetGame();
         tileM.resetMap();
     }
